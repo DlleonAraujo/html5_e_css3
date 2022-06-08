@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/pequena.png" type="image/x-icon">
+    <title>Mideas em html5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes, ou simplesmente aumente e diminua de tamanho no seu navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexivel">
+
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio src="midea/1.mp3" controls></audio>
+    <h1>Outra forma de adicionar audio</h1>
+    <audio preload="metadata" controls>
+        <source src="midea/1.mp3" type="audio/mpeg">
+        <source src="midea/01 - Waking the Fallen.mp3" type="audio/mpeg">
+    </audio>
+    <p>aqui em cima eu adicionei 2 audios diferentes mas, é um exemplo de adicionar varios formartos do mesmo audio para ter compatibilidade com varios navegadores.</p>
+    <video src="midea/Insania (Solo) - Angra - Marcelo Barbosa(480P).mp4"controls></video>
+</body>
+</html>
